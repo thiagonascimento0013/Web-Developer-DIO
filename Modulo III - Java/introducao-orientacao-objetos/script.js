@@ -77,8 +77,8 @@ class ContaUniversitaria extends ContaBancaria {
         this.tipo = 'universitaria';
     }
 
-    saque (valor){
-        if (valor > 500){
+    sacar (valor){
+        if (valor > 500) {
             return ('Operação negada');
         }
         this._saldo = saldo - valor;
